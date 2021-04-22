@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display:flex;
+    justify-content:space-around;
+    margin-top: 20px;
+}
+
+.header h1 span{
+    color:green;
+}
+
+.header nav ul{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    list-style:none;
+    margin-top:10px;
+}
+
+.header nav ul li{
+    margin-left: 20px;
+}
+
+.header nav ul a{
+    text-decoration: none;
+    color:black;
+    font-weight:bold;
+}
+
+.header nav ul a:hover{
+    color:green;
+    cursor:pointer;
+}
+
+.ic i{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.ic i sup{
+    background-color: yellow;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.image{
+    background-image: url("/images/slider.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+main{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.slider{
+    margin-top: 50px;
+}
+
+.matn-slider > p:first-child{
+    font-weight: bold;
+    font-size: 28px;
+    color:orange;
+}
+
+.matn-slider > p:first-child ~ p{
+    font-size: 56px;
+    color:white;
+    font-weight: bold;
+}
+
+.matn-slider{
+    position:absolute;
+    top:330px;
+    left:300px;
+}
+
+.btn {
+    font-family: Hack, monospace;
+    margin-top:15px;
+    background: #000;
+    color: yellowgreen;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 1.5rem;
+    border: 0;
+    transition: all 0.5s;
+    width: 200px;
+    position: relative;
+}
+.btn::after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 400;
+    position: absolute;
+    left: 85%;
+    top: 31%;
+    right: 5%;
+    bottom: 0;
+    opacity: 0;
+}
+.btn:hover {
+    background: transparent;
+    transition: all 0.5s;
+    color: white;
+    box-shadow: 0px 6px 15px #000;
+}
+.btn::after {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.orange{
+    display:flex;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.left-1{
+    background-image: url("/images/orange1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 500px;
+    width: 50%;
+    margin-left: 200px;
+}
+
+.right-1{
+    width:50%;
+    margin-right: 200px;
+}
+
+.right-1 h2{
+    margin-top: 100px;
+    margin-left: 100px;
+    font-size: 58px;
+}
+
+.right-1 p{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.down-line{
+    margin-top: 120px;
+}
+.name p{
+    font-size:22px;
+}
+
+.milk{
+    display:flex;
+    width:100%;
+    margin-top:100px;
+}
+
+.left-2{
+    background-image: url("/images/orange2.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 500px;
+    width: 50%;
+    margin-left: 200px; 
+}
+
+.right-2{
+    background-image: url("/images/milk.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 500px;
+    width: 50%;
+    margin-right: 200px;
+}
+
+.matn-right2{
+    margin-top: 150px;
+    margin-left: 80px;
+}
+
+.matn-right2 p{
+    color: #fff;
+    font-size:24px;
+}
+.pm{
+    font-size: 58px !important ;
+}
+
+.matn-left2{
+    margin-top: 150px;
+    margin-left: 80px;
+}
+
+.matn-left2 p{
+    color: #000;
+    font-size:24px;
+}
+.po{
+    font-size: 58px !important ;
+}
+
+.top{
+    margin-top: 150px;
+}
+
+.top > h1{
+    text-align: center;
+    font-size:48px;
+}
+
+.top nav ul{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    list-style:none;
+    margin-left: 450px;
+    margin-top:50px;
+}
+
+.top nav ul li{
+    margin-left: 20px;
+}
+
+.top nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.top nav ul li a:hover{
+    color: green;
+}
+
+
+.main-container{
+    margin-top: 50px;
+    margin-left: 200px;
+    width:80%;
+}
+
+.fruit-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fruit-card{
+    border-radius: 5px;
+    margin: 10px;
+    transition-duration: 300ms;
+}
+
+.fruit-card img{
+    transition-duration: 300ms;
+    border-radius: 5px 5px 0 0;
+    height: 200px;
+    width: 240px;
+    border: 1px solid gray;
+}
+
+.desc{
+    padding: 0 1rem;
+}
+
+.desc span{
+    display: block;
+    margin-top: 5px;
+}
+
+.desc span:first-child{
+    margin-left: 80px;
+}
+
+.descO{
+    margin-left: 50px;
+}
+
+.price{
+    margin-left: 80px;
+}
+
+.price-gh{
+    display: inline;
+}
+
+.fruit-card:hover {
+    background-color: #bdbdbd;
+    box-shadow: -1px 1px 10px 1px #828282, 1px -1px 10px 1px #828282;
+}
+.fruit-card:hover img{
+    filter: brightness(80%);
+}

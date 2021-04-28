@@ -488,47 +488,7 @@ main{
 .badge span:first-child{
     background-color:green;
 }
-
-
-.footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 55%;
-}
-.footer a{
-    text-decoration: none;
-    color: rgb(196, 190, 190);
-}
-.footer h2{
-    color: white;
-}
-.left-footer{
-    width: 33%;
-    margin-top:40px;
-}
-.left-footer li{
-    list-style-type:none;
-    margin: 10px;
-}
-.left-footer ul{
-    margin-top: 40px;
-}
-.middle-footer{
-    width: 33%;
-    margin-top:40px;
-}
-.middle-footer li{
-    list-style-type:none;
-}
-
-.right-footer{
-    width: 33%;
-    margin-top:40px;
-}
-.right-footer li{
-    list-style-type:none;
-}
+/* shoro fo style cole footer */
 
 .fo{
     display: flex;
@@ -538,3 +498,224 @@ main{
     margin-top: 100px;
     background-color:rgb(60, 64, 71);
 }
+
+/* payan fo style cole footer */
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 56%;
+}
+.footer a{
+    text-decoration: none;
+    color: rgb(196, 190, 190);
+}
+.footer h2{
+    color: white;
+}
+
+/* shoro left footer */
+
+.left-footer{
+    width: 30%;
+    margin-top:40px;
+}
+.left-footer li{
+    list-style-type:none;
+    margin: 10px;
+    display: block;
+}
+.left-footer h2::after{
+    content: " ";
+    width: 18px;
+    height: 3px;
+    margin-top: 38px;
+    left: 340px;
+    background: green;
+    position: absolute;
+}
+.left-footer em::after{
+    content: " ";
+    width: 25px;
+    height: 2px;
+    margin-top: 45px;
+    left: 340px;
+    background: green;
+    position: absolute;
+}
+.left-footer ul{
+    margin-top: 40px;
+    margin-left:10px;
+}
+.ul-footer a{
+    display: inline-block;
+}
+.ul-footer li{
+    display: block;
+}
+.ul-footer li::after {
+    content: " ";
+    width: 13px;
+    left: 340px;
+    height: 1px;
+    margin-top: 10px;
+    background: yellow;
+    position: absolute;
+}
+
+/* payan left footer */
+
+
+/* shoro middle footer  */
+
+.middle-footer{
+    width: 30%;
+    margin-top:40px;
+}
+.middle-footer li{
+    list-style-type:none;
+}
+.middle-footer h2::after{
+    content: " ";
+    width: 18px;
+    height: 3.5px;
+    margin-top: 38px;
+    left: 600px;
+    background: green;
+    position: absolute;
+}
+.middle-footer em::after{
+    content: " ";
+    width: 25px;
+    height: 2px;
+    margin-top: 45px;
+    left: 600px;
+    background: green;
+    position: absolute;
+}
+.aks-footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    justify-content: space-between;
+}
+.aks-footer div:nth-child(1){
+    background-image: url("/project1/images/angur.jpg");
+    height: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30%;
+}
+.aks-footer div:nth-child(2){
+    background-image: url("/project1/images/ananas.jpg");
+    height: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30%;
+}
+.aks-footer div:nth-child(3){
+    background-image: url("/project1/images/totfarangi.jpg");
+    height: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30%;
+}
+.aks-footer div:nth-child(4){
+    background-image:url("/project1/images/hendevane.jpg");
+    height: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30%;
+    margin-top: 10px;
+}
+.aks-footer div:nth-child(5){
+    background-image: url("/project1/images/golabi.jpg");
+    height: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30%;
+    margin-top: 10px;
+}
+.aks-footer div:nth-child(6){
+    background-image: url("/project1/images/banana.jpg");
+    height: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30%;
+    margin-top: 10px;
+}
+/* payan middle footer */
+
+
+/* shoro right footer */
+
+.right-footer{
+    width: 33%;
+    margin-top:40px;
+    margin-left: 40px;
+}
+.right-footer li{
+    list-style-type:none;
+}
+.right-footer h2::after{
+    content: " ";
+    width: 18px;
+    height: 3.5px;
+    margin-top: 38px;
+    right: 597px;
+    background: green;
+    position: absolute;
+}
+.right-footer em::after{
+    content: " ";
+    width: 25px;
+    height: 2px;
+    margin-top: 45px;
+    right: 590px;
+    background: green;
+    position: absolute;
+}
+.social{
+    margin-top:40px;
+}
+.social div{
+    margin-top:15px;
+}
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 50px;
+    /* height: 20px; */
+    text-align: center;
+    text-decoration: none;
+    margin: 1px 2px;
+    border-radius: 50%;
+  }
+  
+.fa:hover {
+      opacity: 0.7;
+}
+.fa-twitter {
+    background: white;
+    color: black !important;
+}
+.fa-instagram {
+    background: white;
+    color: black !important;
+}
+  
+.fa-pinterest {
+    background: white;
+    color: black !important;
+} 
+.fa-google {
+    background: white;
+    color: black !important;
+}
+
+/* payan right footer */
+
+
+
+
+

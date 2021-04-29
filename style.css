@@ -22,7 +22,12 @@
     list-style:none;
     margin-top:10px;
 }
-
+.but-bar{
+    display:none;
+}
+.but-button{
+    display:none;
+}
 .header nav ul li{
     margin-left: 20px;
 }
@@ -33,8 +38,8 @@
     font-weight:bold;
 }
 
-.header nav ul a:hover{
-    color:green;
+.nav-link:hover{
+    color:green !important;
     cursor:pointer;
 }
 
@@ -60,6 +65,8 @@
 main{
     margin-left: 10px;
     margin-right: 10px;
+    display: flex;
+    flex-wrap:wrap;
 }
 
 .slider{
@@ -88,7 +95,7 @@ main{
     margin-top: 200px;
 }
 
-.btn {
+.btn2 {
     font-family: Hack, monospace;
     margin-top:15px;
     background: #000;
@@ -101,7 +108,7 @@ main{
     width: 200px;
     position: relative;
 }
-.btn::after {
+.btn2::after {
     content: "\f054";
     font-family: "Font Awesome 5 Pro";
     font-weight: 400;
@@ -112,21 +119,25 @@ main{
     bottom: 0;
     opacity: 0;
 }
-.btn:hover {
+.btn2:hover {
     background: transparent;
     transition: all 0.5s;
     color: white;
     box-shadow: 0px 6px 15px #000;
 }
-.btn::after {
+.btn2::after {
     opacity: 1;
     transition: all 0.5s;
 }
 
+.bforange{
+    width: 80%;
+    margin-top: 100px;
+}
 .orange{
     display:flex;
-    width: 100%;
-    margin-top: 100px;
+    flex-wrap: wrap;
+    margin-left: 200px;
 }
 
 .left-1{
@@ -135,12 +146,10 @@ main{
     background-size:cover;
     height: 500px;
     width: 50%;
-    margin-left: 200px;
 }
 
 .right-1{
     width:50%;
-    margin-right: 200px;
 }
 
 .right-1 h2{
@@ -159,38 +168,49 @@ main{
 .name p{
     font-size:22px;
 }
-
+.bfmilk{
+    width: 80%;
+    margin-top: 100px;
+}
 .milk{
     display:flex;
-    width:100%;
-    margin-top:100px;
+    flex-wrap: wrap;
+    margin-left: 200px;
 }
 
 .left-2{
+    height: 500px;
+    width: 50%;
+    position: relative;
+}
+.leftimg{
     background-image: url("images/orange2.jpg");
     background-repeat: no-repeat;
     background-size:cover;
+    width: 100%;
+    height: 100%;
+}
+.right-2{
     height: 500px;
     width: 50%;
-    margin-left: 200px; 
+    position: relative;
 }
-
-.right-2{
+.rightimg{
     background-image: url("images/milk.jpg");
     background-repeat: no-repeat;
     background-size:cover;
-    height: 500px;
-    width: 50%;
-    margin-right: 200px;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
-
 .matn-right2{
-    margin-top: 150px;
+    position:absolute;
+    top: 30px;
     margin-left: 80px;
 }
 
 .matn-right2 p{
-    color: #fff;
+    color: #000;
     font-size:24px;
 }
 .pm{
@@ -198,8 +218,9 @@ main{
 }
 
 .matn-left2{
-    margin-top: 150px;
     margin-left: 80px;
+    top: 30px;
+    position:absolute;
 }
 
 .matn-left2 p{
@@ -516,7 +537,13 @@ main{
 }
 
 /* shoro left footer */
-
+.ul-footer > a{
+    text-decoration: none;
+}
+.ul-footer > a:hover{
+    color: green;
+    text-decoration: none;
+}
 .left-footer{
     width: 30%;
     margin-top:40px;
@@ -716,7 +743,119 @@ main{
 
 /* payan right footer */
 
+@media screen and (max-width:768px) {
+    *{
+        margin:0;
+        padding:0;
+    }
+    .slider{
+        width: 100%;
+    }
+    .left-1{
+        width: 80%;
+    }
+    .right-1{
+        width: 80%;
+    }
+    .left-2{
+        width: 100%;
+    }
+    .leftimg{
+        width: 100%;
+    }
+    .right-2{
+        width: 100%;
+    }
+    .rightimg{
+        width: 100%;
+    }
+    .top > nav > ul{
+        display:flex;
+        flex-direction:column;
+        margin-left: 250px;
+    }
+    .top > nav > ul > li{
+        margin-top: 5px;
+    }
+    .main-container{
+        margin-top: 50px;
+        margin-left:0;
+        width:100%;
+    }
+    .image-products{
+        display:flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .image-product{
+        display:flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .image-1{
+        display:block;
+        width: 100%;
+    }
+    .image-2{
+        display: block;
+        width: 100%;
+    }
+    .image-3{
+        display: block;
+        width: 100%;
+    }
+    .image-4{
+        display: block;
+        width: 100%;
+    }
+    .btn-v{
+        display: block;
+        margin-left: 250px;
+        margin-top: 80%;
+    }
+    .info-cust{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .info-asli{
+        display: flex;
+        flex-direction: column;
+    }
+    .fo{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-left:100px;
 
+    }
+    .left-footer h2::after{
+        left: 110px;        
+    }
+    .left-footer em::after{
+        left: 110px;        
+    }
+    .middle-footer h2::after{
+        left: 100px;
+    }
+    .middle-footer em::after{
+        left: 100px;
+    }
+    .right-footer h2::after{
+        left: 140px;
+    }
+    .right-footer em::after{
+        left: 140px;
+    }
+    .ul-footer li::after{
+        left: 100px;
+    }
+}
 
 
 

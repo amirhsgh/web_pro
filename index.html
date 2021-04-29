@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/b1a07d897d.js"></script>
-
     <title>fattoria</title>
 </head>
 <body>
@@ -16,15 +15,31 @@
         <div class="header">
             <h1><span><em>F</em></span>attoria</h1>
 
-            <nav>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">SHOP</a></li>
-                    <li><a href="#">VENDOR</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">VENDOR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+
 
             <div class="ic">
                 <i class="fas fa-search"></i>
@@ -49,7 +64,7 @@
                 <p>100% Healthy & Affordable</p>
                 <p><em>Organic Fruits</em></p>
 
-                <button class="btn">SHOP NOW</button>
+                <button class="btn2">SHOP NOW</button>
 
             </div>
 
@@ -57,37 +72,43 @@
 
         </div>
 
-
-        <div class="orange">
-            <div class="left-1">
-            </div>
-            <div class="right-1">
-                <h2><em>Fattoria Store</em></h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione distinctio quam repudiandae minima vitae dicta earum alias, perferendis, praesentium suscipit ex voluptatum expedita amet. Tempora dolor ad ab nesciunt illo?</p>
-            
-                <div class="down-line">
-                    <span class='line'></span>
-                    <span class="name"><p>Amirhs Qavi</p></span>
+        <div class="bforange">
+            <div class="orange">
+                <div class="left-1">
+                </div>
+                <div class="right-1">
+                    <h2><em>Fattoria Store</em></h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione distinctio quam repudiandae minima vitae dicta earum alias, perferendis, praesentium suscipit ex voluptatum expedita amet. Tempora dolor ad ab nesciunt illo?</p>
+                
+                    <div class="down-line">
+                        <span class='line'></span>
+                        <span class="name"><p>Amirhs Qavi</p></span>
+                    </div>
                 </div>
             </div>
         </div>
 
 
-        <div class="milk">
-            <div class="left-2">
-                <div class="matn-left2">
-                    <p><em class="po">Sale <br> 30% Off</em></p>
-                    <p>Organic Products</p>
-                </div>
-            </div>
-            <div class="right-2">
-                <div class="matn-right2">
-                    <p><em class="pm">Milk Fresh <br> Bavi Nuti</em></p>
-                    <p>Our Farm Fattoria</p>
-                </div>
-            </div>
-        </div>
+        <div class="bfmilk">
+            <div class="milk">
+                <div class="left-2">
+                    <div class="leftimg"></div>
 
+                    <div class="matn-left2">
+                        <p><em class="po">Sale <br> 30% Off</em></p>
+                        <p>Organic Products</p>
+                    </div>
+                </div>
+                <div class="right-2">
+                    <div class="rightimg"></div>
+                    <div class="matn-right2">
+                        <p><em class="pm">Milk Fresh <br> Bavi Nuti</em></p>
+                        <p>Our Farm Fattoria</p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        
 
         <div class="products">
 
@@ -328,7 +349,9 @@
 
     </footer>
 
-
-
+    <script src="https://kit.fontawesome.com/b1a07d897d.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
